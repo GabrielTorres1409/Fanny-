@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1em;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container {
+            padding: 2em;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 2em;
+            border-radius: 10px;
+        }
+        .button-container {
+            margin-top: 2em;
+        }
+        .button-container button {
+            margin: 1em;
+            padding: 1em 2em;
+            background-color: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+        .button-container button:hover {
+            background-color: #666;
+        }
+        .section {
+            margin-top: 2em;
+            padding: 2em;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: none;
+            border-radius: 10px;
+        }
+        .section.active {
+            display: block;
+        }
+        .section img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 1em auto;
+            border-radius: 10px;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        .menu ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Página de Inicio</h1>
+    </header>
+    <div class="container">
+        <div>
+            <p>Nombre: GabrielAdairCollazoTorres</p>
+            <p>Grado: 4⁰</p>
+            <p>Grupo: B </p>
+            <p>Programación</p>
+        </div>
+        <div class="button-container">
+            <button onclick="showSection('section1')">Alto al Bullying</button>
+            <button onclick="showSection('section2')">Lugares Turísticos</button>
+            <button onclick="showSection('section3')">Calentamiento Global</button>
+        </div>
+    </div>
+
+    <div id="section1" class="section">
+        <h2>Alto al Bullying</h2>
+        <p>El bullying es un problema serio que afecta a muchos estudiantes. Es importante estar informado y saber cómo prevenirlo.</p>
+        <img src="bullying1.jpg" alt="Imagen de prevención del bullying">
+        <p>El bullying puede ser físico, verbal, social o cibernético. Aquí hay algunas formas de prevenirlo:</p>
+        <ul>
+            <li>Habla con alguien en quien confíes si estás siendo acosado o si ves que alguien más lo está.</li>
+            <li>Promueve un ambiente de respeto y amabilidad en tu escuela.</li>
+            <li>No seas un espectador. Si ves bullying, intervén de manera segura o busca ayuda de un adulto.</li>
+            <li>Participa en programas y campañas anti-bullying en tu escuela.</li>
+        </ul>
+        <img src="bullying2.jpg" alt="Imagen de prevención del bullying">
+        <p>Para más información y recursos, visita el siguiente <a href="https://salud.edomex.gob.mx/isem/bullying#:~:text=El%20acoso%20escolar%20(conocido%20como,y%20j%C3%B3venes%20en%20edad%20escolar." target="_blank">enlace</a>.</p>
+    </div>
+
+    <div id="section2" class="section">
+        <h2>Lugares Turísticos de San Cristóbal de las Casas, Chiapas</h2>
+        <div>
+            <h3>Catedral de San Cristóbal</h3>
+            <img src="Catedral.jpg" alt="Catedral de San Cristóbal">
+            <p>La Catedral de San Cristóbal de las Casas es un hermoso ejemplo de arquitectura colonial española.</p>
+            <a href="http://sic.gob.mx/ficha.php?table=catedral&table_id=16" target="_blank">Más información</a>
+        </div>
+        <div>
+            <h3>El Cerrito de San Cristóbal</h3>
+            <img src="cerrito.jpg" alt="Cerrito de San Cristóbal">
+            <p>El Cerrito de San Cristóbal es un promontorio de poco más de 70 m de elevación y que cubre un poco más de 18 hectáreas de extensión dentro de la parte central del valle de San Cristóbal de Las Casas.</p>
+            <a href="https://biblioteca.ecosur.mx/cgi-bin/koha/opac-authoritiesdetail.pl?authid=15606" target="_blank">Más información</a>
+        </div>
+        <div>
+            <h3>Grutas de Rancho Nuevo</h3>
+            <img src="grutas.jpg" alt="Grutas de Rancho Nuevo">
+            <p>Descubiertas en 1947, estas grutas tienen una sola entrada, agujeros laterales con una longitud de 10.2 kilómetros y una profundidad de hasta 550 metros. El Parque Ecoturístico de Rancho Nuevo es un espacio natural situado a 15 kilómetros de la ciudad de San Cristóbal de Las Casas.</p>
+            <a href="https://www.hoteljovel.com/informacion-de-grutas-de-rancho-nuevo-chiapas-hotel-jovel.html" target="_blank">Más información</a>
+        </div>
+    </div>
+
+    <div id="section3" class="section">
+        <h2>Calentamiento Global</h2>
+        <div class="menu">
+            <ul>
+                <li><a href="tel:911">Llamar a Bomberos (Incendios Forestales)</a></li>
+                <li><a href="tel:8007763372">Reportar Crímenes Ambientales</a></li>
+                <li><a href="https://www.nationalgeographic.es/medio-ambiente/que-es-el-calentamiento-global">Más Información sobre el Calentamiento Global</a></li>
+            </ul>
+        </div>
+        <p>El calentamiento global es uno de los mayores desafíos ambientales que enfrenta nuestro planeta. La actividad humana, como la quema de combustibles fósiles y la deforestación, ha aumentado la concentración de gases de efecto invernadero en la atmósfera, lo que provoca un aumento de la temperatura media global.</p>
+        <img src="calentamientoglobal960-700x365.jpg" alt="Impacto del calentamiento global 1">
+        <img src="FOTO-PUNTOS-FISCALES-3.jpg" alt="Impacto del calentamiento global 2">
+        <h2>Acciones para Combatir el Calentamiento Global</h2>
+        <p>Para combatir el calentamiento global, es fundamental reducir las emisiones de gases de efecto invernadero y promover prácticas sostenibles en todos los sectores. Algunas acciones que podemos tomar incluyen:</p>
+        <ul>
+            <li><a href="https://www.edf.org/climate/how-you-can-reduce-climate-change">Reducir el consumo de energía</a></li>
+            <li><a href="https://www.nrdc.org/stories/how-you-can-stop-global-warming">Fomentar el uso de energías renovables</a></li>
+            <li><a href="https://www.greenpeace.org/international/publication/975/landing-page/">Apoyar iniciativas para la conservación de bosques y biodiversidad</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
